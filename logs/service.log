@@ -1,0 +1,477 @@
+2026-03-12 16:14:11,597 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:14:11,726 | INFO | Scheduling config id=1 every 15 minutes
+2026-03-12 16:14:11,726 | INFO | Scheduling config 1 every 15 minutes
+2026-03-12 16:14:11,726 | INFO | Starting fetch job for config id=1 (frequency=15m)
+2026-03-12 16:14:11,726 | INFO | Starting fetch job for config id=1 (frequency=15m)
+2026-03-12 16:14:12,818 | INFO | X returned 10 tweets
+2026-03-12 16:14:14,894 | INFO | YouTube returned 41 videos
+2026-03-12 16:14:14,894 | INFO | YouTube returned 41 videos
+2026-03-12 16:14:18,353 | INFO | Checking email trigger for config 1
+2026-03-12 16:14:18,353 | INFO | Checking email trigger for config 1
+2026-03-12 16:14:18,354 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:14:18,358 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com'] with 51 posts
+2026-03-12 16:14:18,359 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com'] with 51 posts
+2026-03-12 16:14:19,770 | INFO | Fetched 51 posts
+2026-03-12 16:14:19,770 | INFO | Fetched 51 posts
+2026-03-12 16:14:19,771 | INFO | Scheduling config id=2 every 5 minutes
+2026-03-12 16:14:19,771 | INFO | Scheduling config 2 every 5 minutes
+2026-03-12 16:14:19,771 | INFO | Starting fetch job for config id=2 (frequency=5m)
+2026-03-12 16:14:19,772 | INFO | Starting fetch job for config id=2 (frequency=5m)
+2026-03-12 16:14:20,740 | INFO | X returned 0 tweets
+2026-03-12 16:14:21,269 | INFO | YouTube returned 0 videos
+2026-03-12 16:14:21,269 | INFO | YouTube returned 0 videos
+2026-03-12 16:14:21,270 | INFO | Checking email trigger for config 2
+2026-03-12 16:14:21,270 | INFO | Checking email trigger for config 2
+2026-03-12 16:14:21,270 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:14:21,272 | INFO | Fetched 0 posts
+2026-03-12 16:14:21,272 | INFO | Fetched 0 posts
+2026-03-12 16:14:21,272 | INFO | Scheduled 2 config(s).
+2026-03-12 16:14:21,273 | INFO | Scheduled 2 config(s).
+2026-03-12 16:15:27,966 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:15:28,070 | INFO | Scheduling config id=5 every 30 minutes
+2026-03-12 16:15:28,070 | INFO | Scheduling config 5 every 30 minutes
+2026-03-12 16:15:28,070 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:15:28,070 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:15:28,973 | INFO | X returned 0 tweets
+2026-03-12 16:15:30,015 | INFO | YouTube returned 0 videos
+2026-03-12 16:15:30,015 | INFO | YouTube returned 0 videos
+2026-03-12 16:15:30,015 | INFO | Checking email trigger for config 5
+2026-03-12 16:15:30,015 | INFO | Checking email trigger for config 5
+2026-03-12 16:15:30,015 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:15:30,017 | INFO | Fetched 0 posts
+2026-03-12 16:15:30,017 | INFO | Fetched 0 posts
+2026-03-12 16:15:30,017 | INFO | Scheduled 1 config(s).
+2026-03-12 16:15:30,018 | INFO | Scheduled 1 config(s).
+2026-03-12 16:45:33,943 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:45:57,125 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:45:57,143 | INFO | Loading active configs and scheduling jobs
+2026-03-12 16:45:57,288 | INFO | Scheduling config id=5 every 30 minutes
+2026-03-12 16:45:57,288 | INFO | Scheduling config 5 every 30 minutes
+2026-03-12 16:45:57,288 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:45:57,288 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:45:58,312 | INFO | X returned 0 tweets
+2026-03-12 16:45:59,475 | INFO | YouTube returned 0 videos
+2026-03-12 16:45:59,476 | INFO | YouTube returned 0 videos
+2026-03-12 16:45:59,476 | INFO | Checking email trigger for config 5
+2026-03-12 16:45:59,476 | INFO | Checking email trigger for config 5
+2026-03-12 16:45:59,477 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:45:59,482 | INFO | Fetched 0 posts
+2026-03-12 16:45:59,482 | INFO | Fetched 0 posts
+2026-03-12 16:45:59,483 | INFO | Scheduled 1 config(s).
+2026-03-12 16:45:59,483 | INFO | Scheduled 1 config(s).
+2026-03-12 16:52:20,499 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:52:20,520 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-12 16:52:20,520 | INFO | Loading active configs and scheduling jobs
+2026-03-12 16:52:20,744 | INFO | Scheduling config id=5 every 30 minutes
+2026-03-12 16:52:20,744 | INFO | Scheduling config 5 every 30 minutes
+2026-03-12 16:52:20,744 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:52:20,744 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:52:22,564 | INFO | X returned 0 tweets
+2026-03-12 16:52:24,340 | INFO | YouTube returned 0 videos
+2026-03-12 16:52:24,340 | INFO | YouTube returned 0 videos
+2026-03-12 16:52:24,340 | INFO | Checking email trigger for config 5
+2026-03-12 16:52:24,340 | INFO | Checking email trigger for config 5
+2026-03-12 16:52:24,340 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:52:24,342 | INFO | Fetched 0 posts
+2026-03-12 16:52:24,343 | INFO | Fetched 0 posts
+2026-03-12 16:52:24,343 | INFO | Scheduled 1 config(s).
+2026-03-12 16:52:24,343 | INFO | Scheduled 1 config(s).
+2026-03-12 16:54:30,362 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:54:30,381 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-12 16:54:30,382 | INFO | Loading active configs and scheduling jobs
+2026-03-12 16:54:30,512 | INFO | Scheduling config id=5 every 30 minutes
+2026-03-12 16:54:30,512 | INFO | Scheduling config 5 every 30 minutes
+2026-03-12 16:54:30,512 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:54:30,512 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 16:54:31,830 | INFO | X returned 0 tweets
+2026-03-12 16:54:33,815 | INFO | YouTube returned 0 videos
+2026-03-12 16:54:33,815 | INFO | YouTube returned 0 videos
+2026-03-12 16:54:33,815 | INFO | Checking email trigger for config 5
+2026-03-12 16:54:33,815 | INFO | Checking email trigger for config 5
+2026-03-12 16:54:33,816 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 16:54:33,817 | INFO | Fetched 0 posts
+2026-03-12 16:54:33,818 | INFO | Fetched 0 posts
+2026-03-12 16:54:33,818 | INFO | Scheduled 1 config(s).
+2026-03-12 16:54:33,818 | INFO | Scheduled 1 config(s).
+2026-03-12 16:59:59,322 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-12 16:59:59,349 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-12 16:59:59,350 | INFO | Loading active configs and scheduling jobs
+2026-03-12 16:59:59,516 | INFO | Scheduling config 5 every 30 minutes
+2026-03-12 16:59:59,516 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-12 17:00:02,463 | INFO | X returned 0 tweets
+2026-03-12 17:00:04,433 | INFO | YouTube returned 0 videos
+2026-03-12 17:00:04,433 | INFO | Checking email trigger for config 5
+2026-03-12 17:00:04,433 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-12 17:00:04,436 | INFO | Fetched 0 posts
+2026-03-12 17:00:04,437 | INFO | Scheduled 1 config(s).
+2026-03-13 10:15:43,204 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-13 10:15:43,240 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-13 10:15:43,241 | INFO | Loading active configs and scheduling jobs
+2026-03-13 10:15:43,679 | INFO | Scheduling config 5 every 30 minutes
+2026-03-13 10:15:43,679 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-13 10:15:45,693 | INFO | X returned 0 tweets
+2026-03-13 10:15:47,680 | INFO | YouTube returned 0 videos
+2026-03-13 10:15:47,681 | INFO | Checking email trigger for config 5
+2026-03-13 10:15:47,681 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-13 10:15:47,688 | INFO | Fetched 0 posts
+2026-03-13 10:15:47,688 | INFO | Scheduled 1 config(s).
+2026-03-16 11:52:02,332 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 11:52:02,383 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 11:52:02,383 | INFO | Loading active configs and scheduling jobs
+2026-03-16 11:52:02,666 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 11:52:02,666 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 11:52:03,747 | INFO | X returned 0 tweets
+2026-03-16 11:52:04,957 | INFO | YouTube returned 3 videos
+2026-03-16 11:52:05,110 | INFO | Checking email trigger for config 5
+2026-03-16 11:52:05,110 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-16 11:52:05,114 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com'] with 3 posts
+2026-03-16 12:23:45,510 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 12:23:45,538 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:23:45,538 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:23:45,538 | INFO | Loading active configs and scheduling jobs
+2026-03-16 12:23:45,721 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 12:23:45,722 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 12:23:46,758 | INFO | X returned 1 tweets
+2026-03-16 12:23:47,793 | INFO | YouTube returned 1 videos
+2026-03-16 12:23:47,804 | INFO | Checking email trigger for config 5
+2026-03-16 12:23:47,804 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com']
+2026-03-16 12:23:47,807 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com'] with 2 posts
+2026-03-16 12:44:36,147 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 12:44:36,160 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:44:36,160 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:44:36,160 | INFO | Loading active configs and scheduling jobs
+2026-03-16 12:44:36,714 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 12:44:36,714 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 12:56:10,178 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 12:56:10,193 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:56:10,193 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 12:56:10,193 | INFO | Loading active configs and scheduling jobs
+2026-03-16 12:56:10,816 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 12:56:10,817 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 12:56:12,500 | INFO | X returned 50 tweets
+2026-03-16 12:56:23,496 | INFO | YouTube returned 41 videos
+2026-03-16 12:56:30,772 | INFO | Checking email trigger for config 1
+2026-03-16 12:56:30,773 | INFO | Emails configured: ['saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com', 'madhurilatha.g@inspiredgeit.com']
+2026-03-16 12:56:30,865 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 91 posts
+2026-03-16 12:56:33,241 | INFO | Fetched 91 posts
+2026-03-16 12:56:33,242 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 12:56:33,243 | INFO | Starting fetch job for config id=2 (frequency=30m)
+2026-03-16 12:56:35,466 | INFO | X returned 50 tweets
+2026-03-16 12:56:44,432 | INFO | YouTube returned 39 videos
+2026-03-16 12:56:48,245 | INFO | Checking email trigger for config 2
+2026-03-16 12:56:48,245 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 12:56:48,329 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 62 posts
+2026-03-16 12:56:49,492 | INFO | Fetched 62 posts
+2026-03-16 12:56:49,494 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 12:56:49,495 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-16 12:56:51,359 | INFO | X returned 1 tweets
+2026-03-16 12:56:51,938 | INFO | YouTube returned 30 videos
+2026-03-16 12:56:53,786 | INFO | Checking email trigger for config 3
+2026-03-16 12:56:53,787 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 12:56:53,828 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 6 posts
+2026-03-16 12:56:54,668 | INFO | Fetched 6 posts
+2026-03-16 12:56:54,670 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 12:56:54,670 | INFO | Starting fetch job for config id=4 (frequency=30m)
+2026-03-16 12:56:56,562 | INFO | X returned 0 tweets
+2026-03-16 12:56:57,059 | INFO | YouTube returned 5 videos
+2026-03-16 12:56:57,788 | INFO | Checking email trigger for config 4
+2026-03-16 12:56:57,789 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 12:56:57,837 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 4 posts
+2026-03-16 12:56:59,078 | INFO | Fetched 4 posts
+2026-03-16 12:56:59,079 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 12:56:59,079 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 12:57:00,971 | INFO | X returned 0 tweets
+2026-03-16 12:57:01,562 | INFO | YouTube returned 25 videos
+2026-03-16 12:57:03,518 | INFO | Checking email trigger for config 5
+2026-03-16 12:57:03,518 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 12:57:03,566 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 7 posts
+2026-03-16 12:57:04,676 | INFO | Fetched 7 posts
+2026-03-16 12:57:04,676 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 12:57:04,676 | INFO | Starting fetch job for config id=6 (frequency=30m)
+2026-03-16 12:57:06,500 | INFO | X returned 0 tweets
+2026-03-16 12:57:06,999 | INFO | YouTube returned 15 videos
+2026-03-16 12:57:09,086 | INFO | Checking email trigger for config 6
+2026-03-16 12:57:09,086 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 12:57:09,130 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 11 posts
+2026-03-16 12:57:10,232 | INFO | Fetched 11 posts
+2026-03-16 12:57:10,233 | INFO | Scheduled 6 config(s).
+2026-03-16 13:02:10,240 | INFO | Loading active configs and scheduling jobs
+2026-03-16 13:02:10,769 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 13:02:10,770 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 13:02:12,977 | INFO | X returned 50 tweets
+2026-03-16 13:02:20,349 | INFO | YouTube returned 50 videos
+2026-03-16 13:02:28,246 | INFO | Checking email trigger for config 1
+2026-03-16 13:02:28,247 | INFO | Emails configured: ['saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com', 'madhurilatha.g@inspiredgeit.com']
+2026-03-16 13:02:28,435 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 170 posts
+2026-03-16 13:02:29,820 | INFO | Fetched 79 posts
+2026-03-16 13:02:29,823 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 13:02:29,824 | INFO | Starting fetch job for config id=2 (frequency=30m)
+2026-03-16 13:02:31,302 | INFO | X returned 0 tweets
+2026-03-16 13:02:31,835 | INFO | YouTube returned 50 videos
+2026-03-16 13:02:37,035 | INFO | Checking email trigger for config 2
+2026-03-16 13:02:37,035 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:02:37,137 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 85 posts
+2026-03-16 13:02:38,769 | INFO | Fetched 23 posts
+2026-03-16 13:02:38,769 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 13:02:38,769 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-16 13:02:40,247 | INFO | X returned 1 tweets
+2026-03-16 13:02:40,788 | INFO | YouTube returned 50 videos
+2026-03-16 13:02:44,323 | INFO | Checking email trigger for config 3
+2026-03-16 13:02:44,324 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:02:44,375 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 20 posts
+2026-03-16 13:02:46,079 | INFO | Fetched 14 posts
+2026-03-16 13:02:46,080 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 13:02:46,081 | INFO | Starting fetch job for config id=4 (frequency=30m)
+2026-03-16 13:02:47,995 | INFO | X returned 0 tweets
+2026-03-16 13:02:48,600 | INFO | YouTube returned 7 videos
+2026-03-16 13:02:49,162 | INFO | Checking email trigger for config 4
+2026-03-16 13:02:49,163 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:02:49,203 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 6 posts
+2026-03-16 13:02:50,528 | INFO | Fetched 2 posts
+2026-03-16 13:02:50,529 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 13:02:50,532 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 13:02:51,939 | INFO | X returned 0 tweets
+2026-03-16 13:02:52,504 | INFO | YouTube returned 50 videos
+2026-03-16 13:02:54,405 | INFO | Checking email trigger for config 5
+2026-03-16 13:02:54,406 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:02:54,445 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 7 posts
+2026-03-16 13:02:55,930 | INFO | Fetched 0 posts
+2026-03-16 13:02:55,931 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 13:02:55,932 | INFO | Starting fetch job for config id=6 (frequency=30m)
+2026-03-16 13:02:57,731 | INFO | X returned 0 tweets
+2026-03-16 13:02:58,348 | INFO | YouTube returned 12 videos
+2026-03-16 13:02:58,778 | INFO | Checking email trigger for config 6
+2026-03-16 13:02:58,778 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:02:58,818 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 11 posts
+2026-03-16 13:03:00,056 | INFO | Fetched 0 posts
+2026-03-16 13:03:00,056 | INFO | Scheduled 6 config(s).
+2026-03-16 13:20:17,663 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 13:20:17,678 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:20:17,679 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:20:17,679 | INFO | Loading active configs and scheduling jobs
+2026-03-16 13:20:18,246 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 13:20:18,247 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 13:20:19,651 | INFO | X returned 2 tweets
+2026-03-16 13:20:21,080 | INFO | YouTube returned 50 videos
+2026-03-16 13:20:29,349 | INFO | Checking email trigger for config 1
+2026-03-16 13:20:29,350 | INFO | Emails configured: ['saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com', 'madhurilatha.g@inspiredgeit.com']
+2026-03-16 13:20:29,495 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 217 posts
+2026-03-16 13:20:32,244 | INFO | Fetched 47 posts
+2026-03-16 13:20:32,245 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 13:20:32,246 | INFO | Starting fetch job for config id=2 (frequency=30m)
+2026-03-16 13:20:33,681 | INFO | X returned 0 tweets
+2026-03-16 13:20:34,268 | INFO | YouTube returned 25 videos
+2026-03-16 13:20:36,111 | INFO | Checking email trigger for config 2
+2026-03-16 13:20:36,112 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:20:36,196 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 92 posts
+2026-03-16 13:20:37,774 | INFO | Fetched 7 posts
+2026-03-16 13:20:37,778 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 13:20:37,778 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-16 13:20:39,948 | INFO | X returned 50 tweets
+2026-03-16 13:20:49,837 | INFO | YouTube returned 50 videos
+2026-03-16 13:20:54,242 | INFO | Checking email trigger for config 3
+2026-03-16 13:20:54,243 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:20:54,371 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 82 posts
+2026-03-16 13:20:55,772 | INFO | Fetched 62 posts
+2026-03-16 13:20:55,773 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 13:20:55,774 | INFO | Starting fetch job for config id=4 (frequency=30m)
+2026-03-16 13:20:57,651 | INFO | X returned 0 tweets
+2026-03-16 13:20:58,231 | INFO | YouTube returned 4 videos
+2026-03-16 13:20:58,535 | INFO | Checking email trigger for config 4
+2026-03-16 13:20:58,535 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:20:58,582 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 7 posts
+2026-03-16 13:21:00,240 | INFO | Fetched 1 posts
+2026-03-16 13:21:00,241 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 13:21:00,242 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 13:21:02,041 | INFO | X returned 0 tweets
+2026-03-16 13:21:05,133 | INFO | YouTube returned 50 videos
+2026-03-16 13:21:07,111 | INFO | Checking email trigger for config 5
+2026-03-16 13:21:07,112 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:21:07,154 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 7 posts
+2026-03-16 13:21:08,002 | INFO | Fetched 0 posts
+2026-03-16 13:21:08,003 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 13:21:08,003 | INFO | Starting fetch job for config id=6 (frequency=30m)
+2026-03-16 13:21:09,915 | INFO | X returned 0 tweets
+2026-03-16 13:21:10,641 | INFO | YouTube returned 11 videos
+2026-03-16 13:21:11,440 | INFO | Checking email trigger for config 6
+2026-03-16 13:21:11,441 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:21:11,512 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 15 posts
+2026-03-16 13:21:12,456 | INFO | Fetched 4 posts
+2026-03-16 13:21:12,457 | INFO | Scheduled 6 config(s).
+2026-03-16 13:28:01,072 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 13:28:01,091 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:28:01,091 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:28:01,091 | INFO | Loading active configs and scheduling jobs
+2026-03-16 13:28:01,745 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 13:28:01,746 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 13:28:47,198 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 13:28:47,214 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:28:47,214 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 13:28:47,214 | INFO | Loading active configs and scheduling jobs
+2026-03-16 13:28:47,866 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 13:28:47,867 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 13:28:48,446 | INFO | Fetching tweets for config 1 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR tamilnadu OR Election2026 OR ECI OR SIRTN OR SVEEP)  (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli OR Karur OR Perambalur OR Ariyalur) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:28:48,446 | INFO | Start time for fetching: 2026-03-16T07:28:48.445756+00:00
+2026-03-16 13:28:48,447 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:28:48,447 | INFO | Current time: 2026-03-16T07:58:48.447599+00:00
+2026-03-16 13:28:49,478 | INFO | X returned 3 tweets
+2026-03-16 13:28:51,130 | INFO | YouTube returned 50 videos
+2026-03-16 13:28:54,632 | INFO | Checking email trigger for config 1
+2026-03-16 13:28:54,633 | INFO | Emails configured: ['saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com', 'madhurilatha.g@inspiredgeit.com']
+2026-03-16 13:28:54,743 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 135 posts
+2026-03-16 13:28:56,138 | INFO | Fetched 9 posts
+2026-03-16 13:28:56,139 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 13:28:56,140 | INFO | Starting fetch job for config id=2 (frequency=30m)
+2026-03-16 13:28:56,490 | INFO | Fetching tweets for config 2 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR tamilnadu OR Election2026 OR ECI OR SIRTN OR SVEEP)  (Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:28:56,491 | INFO | Start time for fetching: 2026-03-16T07:28:56.490065+00:00
+2026-03-16 13:28:56,491 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:28:56,492 | INFO | Current time: 2026-03-16T07:58:56.492048+00:00
+2026-03-16 13:28:57,678 | INFO | X returned 0 tweets
+2026-03-16 13:28:58,461 | INFO | YouTube returned 50 videos
+2026-03-16 13:29:07,569 | INFO | Checking email trigger for config 2
+2026-03-16 13:29:07,569 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:29:07,656 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 42 posts
+2026-03-16 13:29:09,974 | INFO | Fetched 12 posts
+2026-03-16 13:29:09,975 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 13:29:09,975 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-16 13:29:11,329 | INFO | Fetching tweets for config 3 with query: (SpokespersonECI OR ECISVEEP OR TNelectionsCEO OR voterlist OR voterlistTN OR electoralroll OR voterid OR voterregistration) (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli OR Karur OR Perambalur) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:29:11,330 | INFO | Start time for fetching: 2026-03-16T07:29:11.329655+00:00
+2026-03-16 13:29:11,330 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:29:11,330 | INFO | Current time: 2026-03-16T07:59:11.330580+00:00
+2026-03-16 13:29:16,415 | INFO | X returned 1 tweets
+2026-03-16 13:29:17,054 | INFO | YouTube returned 50 videos
+2026-03-16 13:29:24,073 | INFO | Checking email trigger for config 3
+2026-03-16 13:29:24,074 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:29:24,192 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 82 posts
+2026-03-16 13:29:26,061 | INFO | Fetched 6 posts
+2026-03-16 13:29:26,062 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 13:29:26,062 | INFO | Starting fetch job for config id=4 (frequency=30m)
+2026-03-16 13:29:27,029 | INFO | Fetching tweets for config 4 with query: (SpokespersonECI OR ECISVEEP OR TNelectionsCEO OR voterlist OR voterlistTN OR electoralroll OR voterid OR voterregistration) (Ariyalur OR Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:29:27,029 | INFO | Start time for fetching: 2026-03-16T07:29:27.029344+00:00
+2026-03-16 13:29:27,030 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:29:27,030 | INFO | Current time: 2026-03-16T07:59:27.030421+00:00
+2026-03-16 13:29:29,343 | INFO | X returned 4 tweets
+2026-03-16 13:29:33,003 | INFO | YouTube returned 3 videos
+2026-03-16 13:29:33,588 | INFO | Checking email trigger for config 4
+2026-03-16 13:29:33,588 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:29:34,164 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 8 posts
+2026-03-16 13:29:37,944 | INFO | Fetched 5 posts
+2026-03-16 13:29:37,945 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 13:29:37,946 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 13:29:39,055 | INFO | Fetching tweets for config 5 with query: (pollingbooth OR votercomplaint OR voterissues OR missingvoter OR deletedvoter OR fakevoter OR duplicatevoters OR BLO) (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli OR Karur OR Perambalur OR Ariyalur) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:29:39,056 | INFO | Start time for fetching: 2026-03-16T07:29:39.055271+00:00
+2026-03-16 13:29:39,056 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:29:39,057 | INFO | Current time: 2026-03-16T07:59:39.056915+00:00
+2026-03-16 13:29:41,057 | INFO | X returned 0 tweets
+2026-03-16 13:29:41,622 | INFO | YouTube returned 25 videos
+2026-03-16 13:29:43,930 | INFO | Checking email trigger for config 5
+2026-03-16 13:29:43,930 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:29:43,990 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 1 posts
+2026-03-16 13:29:46,948 | INFO | Fetched 1 posts
+2026-03-16 13:29:46,950 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 13:29:46,950 | INFO | Starting fetch job for config id=6 (frequency=30m)
+2026-03-16 13:29:47,801 | INFO | Fetching tweets for config 6 with query: (pollingbooth OR votercomplaint OR voterissues OR missingvoter OR deletedvoter OR fakevoter OR duplicatevoters OR BLO) (Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:reply lang:en
+2026-03-16 13:29:47,801 | INFO | Start time for fetching: 2026-03-16T07:29:47.801131+00:00
+2026-03-16 13:29:47,802 | INFO | Fetch interval (minutes): 30
+2026-03-16 13:29:47,802 | INFO | Current time: 2026-03-16T07:59:47.802620+00:00
+2026-03-16 13:29:49,265 | INFO | X returned 0 tweets
+2026-03-16 13:29:49,907 | INFO | YouTube returned 14 videos
+2026-03-16 13:29:53,297 | INFO | Checking email trigger for config 6
+2026-03-16 13:29:53,301 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 13:29:53,475 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 12 posts
+2026-03-16 13:29:55,583 | INFO | Fetched 8 posts
+2026-03-16 13:29:55,584 | INFO | Scheduled 6 config(s).
+2026-03-16 14:32:33,289 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 14:32:33,308 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 14:32:33,308 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 14:32:33,308 | INFO | Loading active configs and scheduling jobs
+2026-03-16 14:32:33,975 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 14:32:33,975 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 14:32:34,370 | INFO | Fetching tweets for config 1 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR tamilnadu OR Election2026 OR ECI OR SIRTN OR SVEEP) Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:32:34,370 | INFO | Start time for fetching: 2026-03-16T08:32:34.370509+00:00
+2026-03-16 14:32:34,370 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:32:34,370 | INFO | Current time: 2026-03-16T09:02:34.370844+00:00
+2026-03-16 14:35:40,592 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-16 14:35:40,606 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 14:35:40,606 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-16 14:35:40,606 | INFO | Loading active configs and scheduling jobs
+2026-03-16 14:35:41,184 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 14:35:41,184 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-16 14:35:41,540 | INFO | Fetching tweets for config 1 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR tamilnadu OR Election2026 OR ECI OR SIRTN OR SVEEP) (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:35:41,540 | INFO | Start time for fetching: 2026-03-16T08:35:41.540467+00:00
+2026-03-16 14:35:41,540 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:35:41,540 | INFO | Current time: 2026-03-16T09:05:41.540877+00:00
+2026-03-16 14:35:42,476 | INFO | X returned 3 tweets
+2026-03-16 14:35:44,305 | INFO | YouTube returned 39 videos
+2026-03-16 14:35:51,153 | INFO | Checking email trigger for config 1
+2026-03-16 14:35:51,153 | INFO | Emails configured: ['saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com', 'madhurilatha.g@inspiredgeit.com']
+2026-03-16 14:35:51,195 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 42 posts
+2026-03-16 14:35:52,554 | INFO | Fetched 42 posts
+2026-03-16 14:35:52,555 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 14:35:52,555 | INFO | Starting fetch job for config id=2 (frequency=30m)
+2026-03-16 14:35:52,923 | INFO | Fetching tweets for config 2 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR tamilnadu OR Election2026 OR ECI OR SIRTN OR SVEEP) (Karur OR Perambalur OR Ariyalur OR Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:35:52,924 | INFO | Start time for fetching: 2026-03-16T08:35:52.923900+00:00
+2026-03-16 14:35:52,924 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:35:52,924 | INFO | Current time: 2026-03-16T09:05:52.924289+00:00
+2026-03-16 14:35:53,853 | INFO | X returned 2 tweets
+2026-03-16 14:35:54,723 | INFO | YouTube returned 43 videos
+2026-03-16 14:35:59,337 | INFO | Checking email trigger for config 2
+2026-03-16 14:35:59,337 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 14:35:59,410 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 21 posts
+2026-03-16 14:36:00,690 | INFO | Fetched 21 posts
+2026-03-16 14:36:00,691 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 14:36:00,691 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-16 14:36:01,021 | INFO | Fetching tweets for config 3 with query: (SpokespersonECI OR ECISVEEP OR TNelectionsCEO OR voterlist OR voterlistTN OR electoralroll OR voterid OR voterregistration) (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:36:01,021 | INFO | Start time for fetching: 2026-03-16T08:36:01.021188+00:00
+2026-03-16 14:36:01,021 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:36:01,021 | INFO | Current time: 2026-03-16T09:06:01.021504+00:00
+2026-03-16 14:36:01,965 | INFO | X returned 2 tweets
+2026-03-16 14:36:02,643 | INFO | YouTube returned 50 videos
+2026-03-16 14:36:13,449 | INFO | Checking email trigger for config 3
+2026-03-16 14:36:13,449 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 14:36:13,538 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 39 posts
+2026-03-16 14:36:14,831 | INFO | Fetched 39 posts
+2026-03-16 14:36:14,833 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 14:36:14,834 | INFO | Starting fetch job for config id=4 (frequency=30m)
+2026-03-16 14:36:15,249 | INFO | Fetching tweets for config 4 with query: (SpokespersonECI OR ECISVEEP OR TNelectionsCEO OR voterlist OR voterlistTN OR electoralroll OR voterid OR voterregistration) (Karur OR Perambalur OR Ariyalur OR Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:36:15,249 | INFO | Start time for fetching: 2026-03-16T08:36:15.248824+00:00
+2026-03-16 14:36:15,250 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:36:15,250 | INFO | Current time: 2026-03-16T09:06:15.250294+00:00
+2026-03-16 14:36:16,191 | INFO | X returned 0 tweets
+2026-03-16 14:36:16,891 | INFO | YouTube returned 9 videos
+2026-03-16 14:36:17,831 | INFO | Checking email trigger for config 4
+2026-03-16 14:36:17,832 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 14:36:17,877 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 5 posts
+2026-03-16 14:36:19,022 | INFO | Fetched 5 posts
+2026-03-16 14:36:19,022 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 14:36:19,023 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-16 14:36:19,360 | INFO | Fetching tweets for config 5 with query: (pollingbooth OR votercomplaint OR voterissues OR missingvoter OR deletedvoter OR fakevoter OR duplicatevoters OR BLO) (Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris OR Tiruchirappalli) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:36:19,360 | INFO | Start time for fetching: 2026-03-16T08:36:19.359970+00:00
+2026-03-16 14:36:19,360 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:36:19,360 | INFO | Current time: 2026-03-16T09:06:19.360338+00:00
+2026-03-16 14:36:20,234 | INFO | X returned 0 tweets
+2026-03-16 14:36:20,711 | INFO | YouTube returned 25 videos
+2026-03-16 14:36:21,800 | INFO | Checking email trigger for config 5
+2026-03-16 14:36:21,801 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 14:36:21,846 | INFO | Fetched 0 posts
+2026-03-16 14:36:21,847 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 14:36:21,848 | INFO | Starting fetch job for config id=6 (frequency=30m)
+2026-03-16 14:36:22,200 | INFO | Fetching tweets for config 6 with query: (pollingbooth OR votercomplaint OR voterissues OR missingvoter OR deletedvoter OR fakevoter OR duplicatevoters OR BLO) (Karur OR Perambalur OR Ariyalur OR Pudukkottai OR Thanjavur OR Tiruvarur OR Nagapattinam OR Mayiladuthurai OR Cuddalore OR Madurai OR Dindigul OR Sivaganga OR Virudhunagar OR Ramanathapuram OR Thoothukkudi OR Tirunelveli OR Tenkasi OR Kanyakumari) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-16 14:36:22,200 | INFO | Start time for fetching: 2026-03-16T08:36:22.199871+00:00
+2026-03-16 14:36:22,201 | INFO | Fetch interval (minutes): 30
+2026-03-16 14:36:22,201 | INFO | Current time: 2026-03-16T09:06:22.201307+00:00
+2026-03-16 14:36:23,182 | INFO | X returned 0 tweets
+2026-03-16 14:36:23,659 | INFO | YouTube returned 11 videos
+2026-03-16 14:36:24,415 | INFO | Checking email trigger for config 6
+2026-03-16 14:36:24,415 | INFO | Emails configured: ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com']
+2026-03-16 14:36:24,457 | INFO | Sending report to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 3 posts
+2026-03-16 14:36:25,768 | INFO | Fetched 3 posts
+2026-03-16 14:36:25,769 | INFO | Scheduled 6 config(s).
+2026-03-16 14:41:25,774 | INFO | Loading active configs and scheduling jobs
+2026-03-16 14:41:26,343 | INFO | Scheduling config 1 every 30 minutes
+2026-03-16 14:41:26,344 | INFO | Scheduling config 2 every 30 minutes
+2026-03-16 14:41:26,345 | INFO | Scheduling config 3 every 30 minutes
+2026-03-16 14:41:26,346 | INFO | Scheduling config 4 every 30 minutes
+2026-03-16 14:41:26,347 | INFO | Scheduling config 5 every 30 minutes
+2026-03-16 14:41:26,348 | INFO | Scheduling config 6 every 30 minutes
+2026-03-16 14:41:26,349 | INFO | Scheduled 6 config(s).
