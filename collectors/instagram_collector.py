@@ -71,9 +71,18 @@ def fetch_instagram_posts(config):
 
                 text = item.get("caption", "") or ""
 
-                posted_at = datetime.fromisoformat(
-                    item["timestamp"].replace("Z", "+00:00")
-                )
+                # posted_at = datetime.fromisoformat(
+                #     item["timestamp"].replace("Z", "+00:00")
+                # )
+
+                ts = item["timestamp"]
+
+                if ts.endswith("Z"):
+                    ts = ts.replace("Z", "+00:00")
+                elif ts.endswith("+0000"):
+                    ts = ts[:-5] + "+00:00"
+
+                posted_at = datetime.fromisoformat(ts)
 
                 # Manual time filtering
                 if posted_at < cutoff_time:

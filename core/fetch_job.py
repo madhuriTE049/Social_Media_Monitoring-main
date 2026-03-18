@@ -331,105 +331,105 @@ def run_fetch_job_for_config(config, cur, db):
 
     # X COLLECTION
 
-    tweets, users = fetch_tweets(config)
-    logger.info(f"X returned {len(tweets)} tweets")
+    # tweets, users = fetch_tweets(config)
+    # logger.info(f"X returned {len(tweets)} tweets")
 
-    for tweet in tweets:
-        author = users.get(tweet.author_id)
-        if not author:
-            continue
+    # for tweet in tweets:
+    #     author = users.get(tweet.author_id)
+    #     if not author:
+    #         continue
 
-        matched = find_matching_keywords(tweet.text, keywords)
+    #     matched = find_matching_keywords(tweet.text, keywords)
 
-        try:
-            post_id = save_post(cur, tweet, author, config_id, matched)
+    #     try:
+    #         post_id = save_post(cur, tweet, author, config_id, matched)
 
-            if post_id:
-                sentiment, score = analyze_sentiment(tweet.text)
+    #         if post_id:
+    #             sentiment, score = analyze_sentiment(tweet.text)
 
-                cur.execute("""
-                    INSERT IGNORE INTO post_sentiment
-                    (post_id,sentiment,sentiment_score)
-                    VALUES (%s,%s,%s)
-                """,(post_id,sentiment,score))
+    #             cur.execute("""
+    #                 INSERT IGNORE INTO post_sentiment
+    #                 (post_id,sentiment,sentiment_score)
+    #                 VALUES (%s,%s,%s)
+    #             """,(post_id,sentiment,score))
 
-                demo = estimate_demographics(
-                    author.username,
-                    author.name,
-                    author.description
-                )
+    #             demo = estimate_demographics(
+    #                 author.username,
+    #                 author.name,
+    #                 author.description
+    #             )
 
-                cur.execute("""
-                    INSERT IGNORE INTO author_demographics
-                    (post_id,estimated_age_group,estimated_gender)
-                    VALUES (%s,%s,%s)
-                """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+    #             cur.execute("""
+    #                 INSERT IGNORE INTO author_demographics
+    #                 (post_id,estimated_age_group,estimated_gender)
+    #                 VALUES (%s,%s,%s)
+    #             """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
 
-                total += 1
+    #             total += 1
 
-        except Exception as e:
-            db.rollback()
-            log.warning(e)
+    #     except Exception as e:
+    #         db.rollback()
+    #         log.warning(e)
 
     # YOUTUBE COLLECTION
 
-    youtube_videos = fetch_youtube_posts(config)
-    logger.info(f"YouTube returned {len(youtube_videos)} videos")
+    # youtube_videos = fetch_youtube_posts(config)
+    # logger.info(f"YouTube returned {len(youtube_videos)} videos")
 
-    for video in youtube_videos:
-        text = video.get("text", "").strip()
+    # for video in youtube_videos:
+    #     text = video.get("text", "").strip()
 
-        if not text:
-            continue
+    #     if not text:
+    #         continue
 
-        matched = find_matching_keywords(text, keywords)
+    #     matched = find_matching_keywords(text, keywords)
 
-        try:
-            cur.execute("""
-            INSERT IGNORE INTO posts
-            (platform_post_id, platform, keyword_config_id, matched_keywords,
-            post_text, post_url, author_username, author_display_name,
-            like_count, retweet_count, reply_count, impression_count,
-            language, posted_at)
-            VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
-            """,(
-                video["id"],
-                "YOUTUBE",
-                config_id,
-                json.dumps(matched),
-                text,
-                video["url"],
-                video["channel"],
-                video["channel"],
-                0,0,0,0,
-                "en",
-                video["published_at"]
-            ))
+    #     try:
+    #         cur.execute("""
+    #         INSERT IGNORE INTO posts
+    #         (platform_post_id, platform, keyword_config_id, matched_keywords,
+    #         post_text, post_url, author_username, author_display_name,
+    #         like_count, retweet_count, reply_count, impression_count,
+    #         language, posted_at)
+    #         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    #         """,(
+    #             video["id"],
+    #             "YOUTUBE",
+    #             config_id,
+    #             json.dumps(matched),
+    #             text,
+    #             video["url"],
+    #             video["channel"],
+    #             video["channel"],
+    #             0,0,0,0,
+    #             "en",
+    #             video["published_at"]
+    #         ))
 
-            post_id = cur.lastrowid
+    #         post_id = cur.lastrowid
 
-            if post_id:
-                sentiment, score = analyze_sentiment(text)
+    #         if post_id:
+    #             sentiment, score = analyze_sentiment(text)
 
-                cur.execute("""
-                    INSERT IGNORE INTO post_sentiment
-                    (post_id, sentiment, sentiment_score)
-                    VALUES (%s,%s,%s)
-                """,(post_id,sentiment,score))
+    #             cur.execute("""
+    #                 INSERT IGNORE INTO post_sentiment
+    #                 (post_id, sentiment, sentiment_score)
+    #                 VALUES (%s,%s,%s)
+    #             """,(post_id,sentiment,score))
 
-                demo = estimate_demographics(video["channel"], video["channel"], "")
+    #             demo = estimate_demographics(video["channel"], video["channel"], "")
 
-                cur.execute("""
-                    INSERT IGNORE INTO author_demographics
-                    (post_id, estimated_age_group, estimated_gender)
-                    VALUES (%s,%s,%s)
-                """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+    #             cur.execute("""
+    #                 INSERT IGNORE INTO author_demographics
+    #                 (post_id, estimated_age_group, estimated_gender)
+    #                 VALUES (%s,%s,%s)
+    #             """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
 
-                total += 1
+    #             total += 1
 
-        except Exception as e:
-            db.rollback()
-            log.warning(e)
+    #     except Exception as e:
+    #         db.rollback()
+    #         log.warning(e)
 
     # INSTAGRAM COLLECTION
 
