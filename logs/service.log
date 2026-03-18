@@ -475,3 +475,329 @@
 2026-03-16 14:41:26,347 | INFO | Scheduling config 5 every 30 minutes
 2026-03-16 14:41:26,348 | INFO | Scheduling config 6 every 30 minutes
 2026-03-16 14:41:26,349 | INFO | Scheduled 6 config(s).
+2026-03-18 16:10:06,136 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-18 16:10:06,873 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:10:06,873 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:10:06,874 | INFO | Loading active configs and scheduling jobs
+2026-03-18 16:10:07,567 | INFO | Scheduling config 1 every 30 minutes
+2026-03-18 16:10:07,829 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-18 16:10:07,829 | INFO | Fetching tweets for config 1 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR Election2026 OR ECI OR SIRTN OR SVEEP OR TNelectionsCEO) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-18 16:10:07,830 | INFO | Start time for fetching: 2026-03-18T10:10:07.829684+00:00
+2026-03-18 16:10:07,830 | INFO | Fetch interval (minutes): 30
+2026-03-18 16:10:07,830 | INFO | Current time: 2026-03-18T10:40:07.830371+00:00
+2026-03-18 16:10:08,886 | INFO | X returned 12 tweets
+2026-03-18 16:10:11,594 | WARNING | Encountered 403 Forbidden with reason "quotaExceeded"
+2026-03-18 16:22:04,843 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-18 16:22:05,188 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:22:05,188 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:22:05,188 | INFO | Loading active configs and scheduling jobs
+2026-03-18 16:22:05,753 | INFO | Scheduling config 1 every 30 minutes
+2026-03-18 16:22:06,087 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-18 16:22:06,088 | INFO | Fetching tweets for config 1 with query: (tnelection OR TNelections2026 OR TNPolitics OR tamilnadupolitics OR Election2026 OR ECI OR SIRTN OR SVEEP OR TNelectionsCEO) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-18 16:22:06,089 | INFO | Start time for fetching: 2026-03-18T10:22:06.088525+00:00
+2026-03-18 16:22:06,089 | INFO | Fetch interval (minutes): 30
+2026-03-18 16:22:06,090 | INFO | Current time: 2026-03-18T10:52:06.089897+00:00
+2026-03-18 16:22:07,117 | INFO | X returned 8 tweets
+2026-03-18 16:22:09,164 | INFO | YouTube returned 50 videos
+2026-03-18 16:23:05,365 | INFO | Instagram collection completed for config 1 with 87 posts
+2026-03-18 16:23:05,365 | INFO | Instagram returned 87 posts
+2026-03-18 16:23:15,299 | INFO | Fetched 140 posts
+2026-03-18 16:23:15,299 | INFO | Scheduling config 3 every 30 minutes
+2026-03-18 16:23:15,694 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-18 16:23:15,695 | INFO | Fetching tweets for config 3 with query: (SpokespersonECI OR ECISVEEP OR TNelectionsCEO OR voterlist OR voterlistTN OR electoralroll OR voterid OR voterregistration) AND (tamilnadu OR Chennai OR Tiruvallur OR Kancheepuram OR Chengalpattu OR Vellore OR Ranipet OR Tirupattur OR Tiruvannamalai OR Villupuram OR Kallakurichi OR Coimbatore OR Tiruppur OR Erode OR Salem OR Namakkal OR Dharmapuri OR Krishnagiri OR Nilgiris) -spam -cricket -movie -actor -actress -film -cinema -is:retweet -is:quote (lang:en OR lang:ta) -is:retweet -is:reply lang:en
+2026-03-18 16:23:15,696 | INFO | Start time for fetching: 2026-03-18T10:23:15.695630+00:00
+2026-03-18 16:23:15,698 | INFO | Fetch interval (minutes): 30
+2026-03-18 16:23:15,699 | INFO | Current time: 2026-03-18T10:53:15.698789+00:00
+2026-03-18 16:30:01,384 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-18 16:30:01,887 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:30:01,887 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:30:01,887 | INFO | Loading active configs and scheduling jobs
+2026-03-18 16:30:02,702 | INFO | Scheduling config 1 every 30 minutes
+2026-03-18 16:30:03,290 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-18 16:30:04,764 | INFO | YouTube returned 50 videos
+2026-03-18 16:30:47,795 | INFO | Instagram collection completed for config 1 with 91 posts
+2026-03-18 16:30:47,795 | INFO | Instagram returned 91 posts
+2026-03-18 16:30:57,200 | INFO | Fetched 61 posts
+2026-03-18 16:30:57,200 | INFO | Scheduling config 3 every 30 minutes
+2026-03-18 16:30:57,553 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-18 16:30:57,981 | INFO | YouTube returned 2 videos
+2026-03-18 16:31:26,120 | INFO | Instagram collection completed for config 3 with 15 posts
+2026-03-18 16:31:26,120 | INFO | Instagram returned 15 posts
+2026-03-18 16:31:27,689 | INFO | Fetched 17 posts
+2026-03-18 16:31:27,689 | INFO | Scheduling config 5 every 30 minutes
+2026-03-18 16:31:28,098 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-18 16:31:28,443 | INFO | YouTube returned 0 videos
+2026-03-18 16:31:28,444 | INFO | Instagram collection completed for config 5 with 0 posts
+2026-03-18 16:31:28,444 | INFO | Instagram returned 0 posts
+2026-03-18 16:31:28,480 | INFO | Fetched 0 posts
+2026-03-18 16:31:28,481 | INFO | Scheduling config 9 every 30 minutes
+2026-03-18 16:31:28,775 | INFO | Starting fetch job for config id=9 (frequency=30m)
+2026-03-18 16:31:29,197 | INFO | YouTube returned 1 videos
+2026-03-18 16:31:44,310 | INFO | Instagram collection completed for config 9 with 0 posts
+2026-03-18 16:31:44,310 | INFO | Instagram returned 0 posts
+2026-03-18 16:31:44,354 | INFO | Fetched 1 posts
+2026-03-18 16:31:44,356 | INFO | Scheduling config 10 every 30 minutes
+2026-03-18 16:31:44,716 | INFO | Starting fetch job for config id=10 (frequency=30m)
+2026-03-18 16:31:45,081 | INFO | YouTube returned 0 videos
+2026-03-18 16:31:45,081 | INFO | Instagram collection completed for config 10 with 0 posts
+2026-03-18 16:31:45,082 | INFO | Instagram returned 0 posts
+2026-03-18 16:31:45,124 | INFO | Fetched 0 posts
+2026-03-18 16:31:45,124 | INFO | Scheduling config 11 every 30 minutes
+2026-03-18 16:31:45,512 | INFO | Starting fetch job for config id=11 (frequency=30m)
+2026-03-18 16:31:45,862 | INFO | YouTube returned 0 videos
+2026-03-18 16:31:45,863 | INFO | Instagram collection completed for config 11 with 0 posts
+2026-03-18 16:31:45,863 | INFO | Instagram returned 0 posts
+2026-03-18 16:31:45,900 | INFO | Fetched 0 posts
+2026-03-18 16:31:45,901 | INFO | Scheduling config 12 every 30 minutes
+2026-03-18 16:31:46,287 | INFO | Starting fetch job for config id=12 (frequency=30m)
+2026-03-18 16:31:46,788 | INFO | YouTube returned 0 videos
+2026-03-18 16:31:48,165 | WARNING | Instagram hashtag search error for 'cashforvote': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AkDQdNuh86tOGf-qwN9azET'}
+2026-03-18 16:31:49,400 | WARNING | Instagram hashtag search error for 'moneyforvote': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A6_akXatkLmo12q7OnhVIeU'}
+2026-03-18 16:31:59,522 | WARNING | Instagram hashtag search error for 'cashdistribution': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'ApUxJbz6KbFDfxhSLB052Sz'}
+2026-03-18 16:31:59,523 | INFO | Instagram collection completed for config 12 with 0 posts
+2026-03-18 16:31:59,523 | INFO | Instagram returned 0 posts
+2026-03-18 16:31:59,558 | INFO | Fetched 0 posts
+2026-03-18 16:31:59,558 | INFO | Scheduling config 13 every 30 minutes
+2026-03-18 16:31:59,882 | INFO | Starting fetch job for config id=13 (frequency=30m)
+2026-03-18 16:32:00,690 | INFO | YouTube returned 0 videos
+2026-03-18 16:32:00,690 | INFO | Instagram collection completed for config 13 with 0 posts
+2026-03-18 16:32:00,691 | INFO | Instagram returned 0 posts
+2026-03-18 16:32:00,725 | INFO | Fetched 0 posts
+2026-03-18 16:32:00,725 | INFO | Scheduling config 14 every 30 minutes
+2026-03-18 16:32:01,105 | INFO | Starting fetch job for config id=14 (frequency=30m)
+2026-03-18 16:32:01,328 | INFO | YouTube returned 0 videos
+2026-03-18 16:32:01,329 | INFO | Instagram collection completed for config 14 with 0 posts
+2026-03-18 16:32:01,330 | INFO | Instagram returned 0 posts
+2026-03-18 16:32:01,370 | INFO | Fetched 0 posts
+2026-03-18 16:32:01,370 | INFO | Scheduled 9 config(s).
+2026-03-18 16:32:02,212 | INFO | Sending grouped report (frequency=30) to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 219 posts
+2026-03-18 16:33:33,922 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-18 16:33:34,332 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:33:34,332 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 16:33:34,332 | INFO | Loading active configs and scheduling jobs
+2026-03-18 16:33:34,874 | INFO | Scheduling config 1 every 30 minutes
+2026-03-18 16:33:35,221 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-18 16:33:36,493 | INFO | YouTube returned 50 videos
+2026-03-18 16:34:13,120 | INFO | Instagram collection completed for config 1 with 90 posts
+2026-03-18 16:34:13,120 | INFO | Instagram returned 90 posts
+2026-03-18 16:34:18,362 | INFO | Fetched 30 posts
+2026-03-18 16:34:18,362 | INFO | Scheduling config 3 every 30 minutes
+2026-03-18 16:34:18,900 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-18 16:34:19,362 | INFO | YouTube returned 2 videos
+2026-03-18 16:34:45,757 | INFO | Instagram collection completed for config 3 with 14 posts
+2026-03-18 16:34:45,758 | INFO | Instagram returned 14 posts
+2026-03-18 16:34:46,380 | INFO | Fetched 0 posts
+2026-03-18 16:34:46,381 | INFO | Scheduling config 5 every 30 minutes
+2026-03-18 16:34:46,677 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-18 16:34:47,040 | INFO | YouTube returned 0 videos
+2026-03-18 16:34:47,040 | INFO | Instagram collection completed for config 5 with 0 posts
+2026-03-18 16:34:47,040 | INFO | Instagram returned 0 posts
+2026-03-18 16:34:47,072 | INFO | Fetched 0 posts
+2026-03-18 16:34:47,072 | INFO | Scheduling config 9 every 30 minutes
+2026-03-18 16:34:47,358 | INFO | Starting fetch job for config id=9 (frequency=30m)
+2026-03-18 16:34:47,758 | INFO | YouTube returned 1 videos
+2026-03-18 16:35:04,756 | INFO | Instagram collection completed for config 9 with 0 posts
+2026-03-18 16:35:04,756 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:04,806 | INFO | Fetched 0 posts
+2026-03-18 16:35:04,807 | INFO | Scheduling config 10 every 30 minutes
+2026-03-18 16:35:05,228 | INFO | Starting fetch job for config id=10 (frequency=30m)
+2026-03-18 16:35:05,735 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:05,735 | INFO | Instagram collection completed for config 10 with 0 posts
+2026-03-18 16:35:05,736 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:05,779 | INFO | Fetched 0 posts
+2026-03-18 16:35:05,779 | INFO | Scheduling config 11 every 30 minutes
+2026-03-18 16:35:06,108 | INFO | Starting fetch job for config id=11 (frequency=30m)
+2026-03-18 16:35:06,520 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:06,521 | INFO | Instagram collection completed for config 11 with 0 posts
+2026-03-18 16:35:06,521 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:06,562 | INFO | Fetched 0 posts
+2026-03-18 16:35:06,563 | INFO | Scheduling config 12 every 30 minutes
+2026-03-18 16:35:06,885 | INFO | Starting fetch job for config id=12 (frequency=30m)
+2026-03-18 16:35:07,339 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:08,500 | WARNING | Instagram hashtag search error for 'cashforvote': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'Ao4E4tgIB0rIIXdPg5elfWt'}
+2026-03-18 16:35:09,633 | WARNING | Instagram hashtag search error for 'moneyforvote': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'ApItfA_2QMVepYUztzGs1xa'}
+2026-03-18 16:35:16,324 | WARNING | Instagram hashtag search error for 'cashdistribution': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AAp5nSzZBWK9BZ7ntzuTjRd'}
+2026-03-18 16:35:16,324 | INFO | Instagram collection completed for config 12 with 0 posts
+2026-03-18 16:35:16,324 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:16,361 | INFO | Fetched 0 posts
+2026-03-18 16:35:16,361 | INFO | Scheduling config 13 every 30 minutes
+2026-03-18 16:35:16,726 | INFO | Starting fetch job for config id=13 (frequency=30m)
+2026-03-18 16:35:17,087 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:17,087 | INFO | Instagram collection completed for config 13 with 0 posts
+2026-03-18 16:35:17,087 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:17,129 | INFO | Fetched 0 posts
+2026-03-18 16:35:17,130 | INFO | Scheduling config 14 every 30 minutes
+2026-03-18 16:35:17,438 | INFO | Starting fetch job for config id=14 (frequency=30m)
+2026-03-18 16:35:17,780 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:17,781 | INFO | Instagram collection completed for config 14 with 0 posts
+2026-03-18 16:35:17,781 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:17,819 | INFO | Fetched 0 posts
+2026-03-18 16:35:17,820 | INFO | Scheduling config 15 every 30 minutes
+2026-03-18 16:35:18,179 | INFO | Starting fetch job for config id=15 (frequency=30m)
+2026-03-18 16:35:18,586 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:19,776 | WARNING | Instagram hashtag search error for 'fakevoting': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'ASSssiftbZ2ilBW7usFKPY4'}
+2026-03-18 16:35:20,889 | WARNING | Instagram hashtag search error for 'electionfraud': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A5ow4mPPg80VDnk6qzs9cKe'}
+2026-03-18 16:35:22,097 | WARNING | Instagram hashtag search error for 'pollrigging': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'ASDbHQRHmDsqm2P5faIj8NY'}
+2026-03-18 16:35:23,397 | WARNING | Instagram hashtag search error for 'paidvoters': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'APcCxxSN-HnPhG7LK5zdfTZ'}
+2026-03-18 16:35:24,598 | WARNING | Instagram hashtag search error for 'votemanipulation': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A1F984GQI3e_hmOCv_jPQ3-'}
+2026-03-18 16:35:24,599 | INFO | Instagram collection completed for config 15 with 0 posts
+2026-03-18 16:35:24,599 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:24,639 | INFO | Fetched 0 posts
+2026-03-18 16:35:24,640 | INFO | Scheduling config 17 every 30 minutes
+2026-03-18 16:35:25,006 | INFO | Starting fetch job for config id=17 (frequency=30m)
+2026-03-18 16:35:25,345 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:25,345 | INFO | Instagram collection completed for config 17 with 0 posts
+2026-03-18 16:35:25,345 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:25,385 | INFO | Fetched 0 posts
+2026-03-18 16:35:25,385 | INFO | Scheduling config 18 every 30 minutes
+2026-03-18 16:35:25,661 | INFO | Starting fetch job for config id=18 (frequency=30m)
+2026-03-18 16:35:26,078 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:26,079 | INFO | Instagram collection completed for config 18 with 0 posts
+2026-03-18 16:35:26,080 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:26,119 | INFO | Fetched 0 posts
+2026-03-18 16:35:26,120 | INFO | Scheduling config 99 every 30 minutes
+2026-03-18 16:35:26,521 | INFO | Starting fetch job for config id=99 (frequency=30m)
+2026-03-18 16:35:27,008 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:36,852 | WARNING | Instagram hashtag search error for 'moneyforvote': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A6SDVnCN8sIwhMPnvD1cvwB'}
+2026-03-18 16:35:38,407 | WARNING | Instagram hashtag search error for 'freebiespolitics': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AaZaYn-k79GFHtBuPivHIaT'}
+2026-03-18 16:35:39,554 | WARNING | Instagram hashtag search error for 'liquorforvote': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207024, 'is_transient': False, 'error_user_title': 'Could not find a matching hashtag', 'error_user_msg': 'The Hashtag "liquorforvote" requested by the user either cannot be seen due to missing permissions, is invalid or doesn\'t exist.', 'fbtrace_id': 'Aqw3bMGwpvUZKZi3qN-D-ch'}
+2026-03-18 16:35:39,554 | INFO | Instagram collection completed for config 99 with 0 posts
+2026-03-18 16:35:39,555 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:39,593 | INFO | Fetched 0 posts
+2026-03-18 16:35:39,593 | INFO | Scheduling config 118 every 30 minutes
+2026-03-18 16:35:39,971 | INFO | Starting fetch job for config id=118 (frequency=30m)
+2026-03-18 16:35:40,336 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:40,337 | INFO | Instagram collection completed for config 118 with 0 posts
+2026-03-18 16:35:40,337 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:40,375 | INFO | Fetched 0 posts
+2026-03-18 16:35:40,376 | INFO | Scheduling config 119 every 30 minutes
+2026-03-18 16:35:40,739 | INFO | Starting fetch job for config id=119 (frequency=30m)
+2026-03-18 16:35:41,094 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:41,094 | INFO | Instagram collection completed for config 119 with 0 posts
+2026-03-18 16:35:41,094 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:41,134 | INFO | Fetched 0 posts
+2026-03-18 16:35:41,135 | INFO | Scheduling config 120 every 30 minutes
+2026-03-18 16:35:41,462 | INFO | Starting fetch job for config id=120 (frequency=30m)
+2026-03-18 16:35:41,819 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:41,819 | INFO | Instagram collection completed for config 120 with 0 posts
+2026-03-18 16:35:41,819 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:41,854 | INFO | Fetched 0 posts
+2026-03-18 16:35:41,854 | INFO | Scheduling config 121 every 30 minutes
+2026-03-18 16:35:42,164 | INFO | Starting fetch job for config id=121 (frequency=30m)
+2026-03-18 16:35:43,015 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:44,134 | WARNING | Instagram hashtag search error for 'voteridissue': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AM07SkP99DrqgYTxcduPGMP'}
+2026-03-18 16:35:45,128 | WARNING | Instagram hashtag search error for 'epicidproblem': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207024, 'is_transient': False, 'error_user_title': 'Could not find a matching hashtag', 'error_user_msg': 'The Hashtag "epicidproblem" requested by the user either cannot be seen due to missing permissions, is invalid or doesn\'t exist.', 'fbtrace_id': 'Aeboy4dYhy8yX6gqtbNB_6g'}
+2026-03-18 16:35:46,228 | WARNING | Instagram hashtag search error for 'voterlistissue': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AdJOeTNwVKhCcKYeAPZX55f'}
+2026-03-18 16:35:47,390 | WARNING | Instagram hashtag search error for 'missingvotername': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AbyAHWyWLoz1Zj1Y3FdfS0a'}
+2026-03-18 16:35:48,590 | WARNING | Instagram hashtag search error for 'namenotinvoterlist': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AQgFu-NxikXt2iz0TF1WAjz'}
+2026-03-18 16:35:48,591 | INFO | Instagram collection completed for config 121 with 0 posts
+2026-03-18 16:35:48,591 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:48,630 | INFO | Fetched 0 posts
+2026-03-18 16:35:48,630 | INFO | Scheduling config 122 every 30 minutes
+2026-03-18 16:35:48,960 | INFO | Starting fetch job for config id=122 (frequency=30m)
+2026-03-18 16:35:49,315 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:49,316 | INFO | Instagram collection completed for config 122 with 0 posts
+2026-03-18 16:35:49,316 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:49,381 | INFO | Fetched 0 posts
+2026-03-18 16:35:49,381 | INFO | Scheduling config 123 every 30 minutes
+2026-03-18 16:35:50,171 | INFO | Starting fetch job for config id=123 (frequency=30m)
+2026-03-18 16:35:50,562 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:50,563 | INFO | Instagram collection completed for config 123 with 0 posts
+2026-03-18 16:35:50,564 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:50,637 | INFO | Fetched 0 posts
+2026-03-18 16:35:50,638 | INFO | Scheduling config 124 every 30 minutes
+2026-03-18 16:35:51,327 | INFO | Starting fetch job for config id=124 (frequency=30m)
+2026-03-18 16:35:51,795 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:51,795 | INFO | Instagram collection completed for config 124 with 0 posts
+2026-03-18 16:35:51,795 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:51,859 | INFO | Fetched 0 posts
+2026-03-18 16:35:51,859 | INFO | Scheduling config 125 every 30 minutes
+2026-03-18 16:35:52,956 | INFO | Starting fetch job for config id=125 (frequency=30m)
+2026-03-18 16:35:53,292 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:53,293 | INFO | Instagram collection completed for config 125 with 0 posts
+2026-03-18 16:35:53,293 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:53,341 | INFO | Fetched 0 posts
+2026-03-18 16:35:53,342 | INFO | Scheduling config 126 every 30 minutes
+2026-03-18 16:35:53,869 | INFO | Starting fetch job for config id=126 (frequency=30m)
+2026-03-18 16:35:54,235 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:54,235 | INFO | Instagram collection completed for config 126 with 0 posts
+2026-03-18 16:35:54,235 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:54,277 | INFO | Fetched 0 posts
+2026-03-18 16:35:54,277 | INFO | Scheduling config 127 every 30 minutes
+2026-03-18 16:35:54,771 | INFO | Starting fetch job for config id=127 (frequency=30m)
+2026-03-18 16:35:55,126 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:55,126 | INFO | Instagram collection completed for config 127 with 0 posts
+2026-03-18 16:35:55,126 | INFO | Instagram returned 0 posts
+2026-03-18 16:35:55,173 | INFO | Fetched 0 posts
+2026-03-18 16:35:55,174 | INFO | Scheduling config 128 every 30 minutes
+2026-03-18 16:35:55,527 | INFO | Starting fetch job for config id=128 (frequency=30m)
+2026-03-18 16:35:55,918 | INFO | YouTube returned 0 videos
+2026-03-18 16:35:57,323 | WARNING | Instagram hashtag search error for 'fakenewselection': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A8ou_OPneeh2cKq29CQt3Wl'}
+2026-03-18 16:35:59,557 | WARNING | Instagram hashtag search error for 'electionrumor': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A1o6pK-DyVZP1udlhAeBHY3'}
+2026-03-18 16:36:00,652 | WARNING | Instagram hashtag search error for 'viralvideoelection': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'A15tQPuR5Ctq-qF3Ei13Jfx'}
+2026-03-18 16:36:01,759 | WARNING | Instagram hashtag search error for 'fakeelectiondate': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207024, 'is_transient': False, 'error_user_title': 'Could not find a matching hashtag', 'error_user_msg': 'The Hashtag "fakeelectiondate" requested by the user either cannot be seen due to missing permissions, is invalid or doesn\'t exist.', 'fbtrace_id': 'An0KvEIyHOxSko7miHSRLun'}
+2026-03-18 16:36:02,845 | WARNING | Instagram hashtag search error for 'fakevotingrules': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 2207024, 'is_transient': False, 'error_user_title': 'Could not find a matching hashtag', 'error_user_msg': 'The Hashtag "fakevotingrules" requested by the user either cannot be seen due to missing permissions, is invalid or doesn\'t exist.', 'fbtrace_id': 'ALEQrG31uFgL5oWeQaVdS4y'}
+2026-03-18 16:36:02,845 | INFO | Instagram collection completed for config 128 with 0 posts
+2026-03-18 16:36:02,845 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:02,887 | INFO | Fetched 0 posts
+2026-03-18 16:36:02,888 | INFO | Scheduling config 129 every 30 minutes
+2026-03-18 16:36:03,320 | INFO | Starting fetch job for config id=129 (frequency=30m)
+2026-03-18 16:36:03,701 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:03,701 | INFO | Instagram collection completed for config 129 with 0 posts
+2026-03-18 16:36:03,701 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:03,739 | INFO | Fetched 0 posts
+2026-03-18 16:36:03,740 | INFO | Scheduling config 130 every 30 minutes
+2026-03-18 16:36:04,284 | INFO | Starting fetch job for config id=130 (frequency=30m)
+2026-03-18 16:36:04,641 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:04,641 | INFO | Instagram collection completed for config 130 with 0 posts
+2026-03-18 16:36:04,641 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:04,693 | INFO | Fetched 0 posts
+2026-03-18 16:36:04,693 | INFO | Scheduling config 131 every 30 minutes
+2026-03-18 16:36:05,091 | INFO | Starting fetch job for config id=131 (frequency=30m)
+2026-03-18 16:36:05,562 | INFO | YouTube returned 28 videos
+2026-03-18 16:36:09,187 | INFO | Instagram collection completed for config 131 with 0 posts
+2026-03-18 16:36:09,187 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:09,228 | INFO | Fetched 28 posts
+2026-03-18 16:36:09,229 | INFO | Scheduling config 132 every 30 minutes
+2026-03-18 16:36:09,655 | INFO | Starting fetch job for config id=132 (frequency=30m)
+2026-03-18 16:36:10,059 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:10,060 | INFO | Instagram collection completed for config 132 with 0 posts
+2026-03-18 16:36:10,060 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:10,100 | INFO | Fetched 0 posts
+2026-03-18 16:36:10,101 | INFO | Scheduling config 133 every 30 minutes
+2026-03-18 16:36:10,425 | INFO | Starting fetch job for config id=133 (frequency=30m)
+2026-03-18 16:36:10,814 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:10,815 | INFO | Instagram collection completed for config 133 with 0 posts
+2026-03-18 16:36:10,815 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:10,852 | INFO | Fetched 0 posts
+2026-03-18 16:36:10,853 | INFO | Scheduling config 134 every 30 minutes
+2026-03-18 16:36:11,245 | INFO | Starting fetch job for config id=134 (frequency=30m)
+2026-03-18 16:36:11,775 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:13,040 | WARNING | Instagram hashtag search error for 'electionrally': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'ALTBTb1W6o2YWHCda3jlLD8'}
+2026-03-18 16:36:14,235 | WARNING | Instagram hashtag search error for 'campaignspeech': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'APKkUnLKPt1YPb7EE86aYD0'}
+2026-03-18 16:36:15,360 | WARNING | Instagram hashtag search error for 'politicalrally': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AYuDu_bHLjWwuWjelwvTqrG'}
+2026-03-18 16:36:16,599 | WARNING | Instagram hashtag search error for 'voteappeal': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AQhV0XP_-E3Q8r7CuSKUkEy'}
+2026-03-18 16:36:17,624 | WARNING | Instagram hashtag search error for 'manifesto': {'message': 'This API call could not be completed due to resource limits', 'type': 'OAuthException', 'code': 18, 'error_subcode': 2207034, 'is_transient': False, 'error_user_title': 'Hashtag search limit exceeded, retry new hashtag in a week!', 'error_user_msg': 'An Instagram business can only search a limited number of unique hashtags per week through the Graph API. Check out the developer documentation to know about the list of hashtags you can access. https://developers.facebook.com/docs/instagram-api/hashtag-search', 'fbtrace_id': 'AliPy71qla-auUAEygBxyJ_'}
+2026-03-18 16:36:17,624 | INFO | Instagram collection completed for config 134 with 0 posts
+2026-03-18 16:36:17,624 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:17,668 | INFO | Fetched 0 posts
+2026-03-18 16:36:17,668 | INFO | Scheduling config 135 every 30 minutes
+2026-03-18 16:36:18,040 | INFO | Starting fetch job for config id=135 (frequency=30m)
+2026-03-18 16:36:18,631 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:18,632 | INFO | Instagram collection completed for config 135 with 0 posts
+2026-03-18 16:36:18,634 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:18,684 | INFO | Fetched 0 posts
+2026-03-18 16:36:18,685 | INFO | Scheduling config 136 every 30 minutes
+2026-03-18 16:36:19,036 | INFO | Starting fetch job for config id=136 (frequency=30m)
+2026-03-18 16:36:19,385 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:19,385 | INFO | Instagram collection completed for config 136 with 0 posts
+2026-03-18 16:36:19,385 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:19,422 | INFO | Fetched 0 posts
+2026-03-18 16:36:19,423 | INFO | Scheduling config 137 every 30 minutes
+2026-03-18 16:36:19,784 | INFO | Starting fetch job for config id=137 (frequency=30m)
+2026-03-18 16:36:20,147 | INFO | YouTube returned 0 videos
+2026-03-18 16:36:20,148 | INFO | Instagram collection completed for config 137 with 0 posts
+2026-03-18 16:36:20,148 | INFO | Instagram returned 0 posts
+2026-03-18 16:36:20,188 | INFO | Fetched 0 posts
+2026-03-18 16:36:20,188 | INFO | Scheduled 33 config(s).
+2026-03-18 16:36:22,218 | INFO | Sending grouped report (frequency=30) to ['madhurilatha.g@inspiredgeit.com', 'saimohetha.v@inspiredgeit.com', 'shanawaz.md@inspiredgeit.com'] with 277 posts
