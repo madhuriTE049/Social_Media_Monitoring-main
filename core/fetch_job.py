@@ -290,7 +290,8 @@ from parsers.demographics import estimate_demographics
 
 from notifications.email_sender import send_email
 from notifications.report_builder import build_email_table, build_combined_email_table
-
+from tweepy.errors import TooManyRequests
+from googleapiclient.errors import HttpError
 from core.logger import logger
 
 logging.basicConfig(level=logging.INFO)
@@ -333,110 +334,143 @@ def run_fetch_job_for_config(config, cur, db):
 
     # tweets, users = fetch_tweets(config)
     # logger.info(f"X returned {len(tweets)} tweets")
+    # X COLLECTION
+    try:
+        tweets, users = fetch_tweets(config)
+    except TooManyRequests as e:
+        logger.error("X API rate limit exceeded. Skipping this run.")
+        tweets, users = [], {}
+    except Exception as e:
+        logger.error(f"X API error: {e}")
+        tweets, users = [], {}
 
-    # for tweet in tweets:
-    #     author = users.get(tweet.author_id)
-    #     if not author:
-    #         continue
+    for tweet in tweets:
+        author = users.get(tweet.author_id)
+        if not author:
+            continue
 
-    #     matched = find_matching_keywords(tweet.text, keywords)
+        matched = find_matching_keywords(tweet.text, keywords)
 
-    #     try:
-    #         post_id = save_post(cur, tweet, author, config_id, matched)
+        try:
+            post_id = save_post(cur, tweet, author, config_id, matched)
 
-    #         if post_id:
-    #             sentiment, score = analyze_sentiment(tweet.text)
+            if post_id:
+                sentiment, score = analyze_sentiment(tweet.text)
 
-    #             cur.execute("""
-    #                 INSERT IGNORE INTO post_sentiment
-    #                 (post_id,sentiment,sentiment_score)
-    #                 VALUES (%s,%s,%s)
-    #             """,(post_id,sentiment,score))
+                cur.execute("""
+                    INSERT IGNORE INTO post_sentiment
+                    (post_id,sentiment,sentiment_score)
+                    VALUES (%s,%s,%s)
+                """,(post_id,sentiment,score))
 
-    #             demo = estimate_demographics(
-    #                 author.username,
-    #                 author.name,
-    #                 author.description
-    #             )
+                demo = estimate_demographics(
+                    author.username,
+                    author.name,
+                    author.description
+                )
 
-    #             cur.execute("""
-    #                 INSERT IGNORE INTO author_demographics
-    #                 (post_id,estimated_age_group,estimated_gender)
-    #                 VALUES (%s,%s,%s)
-    #             """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+                cur.execute("""
+                    INSERT IGNORE INTO author_demographics
+                    (post_id,estimated_age_group,estimated_gender)
+                    VALUES (%s,%s,%s)
+                """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
 
-    #             total += 1
+                total += 1
 
-    #     except Exception as e:
-    #         db.rollback()
-    #         log.warning(e)
+        except Exception as e:
+            db.rollback()
+            log.warning(e)
 
     # YOUTUBE COLLECTION
 
     # youtube_videos = fetch_youtube_posts(config)
     # logger.info(f"YouTube returned {len(youtube_videos)} videos")
+    try:
+        youtube_videos = fetch_youtube_posts(config)
+        logger.info(f"YouTube returned {len(youtube_videos)} videos")
 
-    # for video in youtube_videos:
-    #     text = video.get("text", "").strip()
+    except HttpError as e:
+        if e.resp.status == 403:
+            logger.error("YouTube API quota exceeded. Skipping this run.")
+        else:
+            logger.error(f"YouTube API HttpError: {e}")
+        youtube_videos = []
 
-    #     if not text:
-    #         continue
+    except Exception as e:
+        logger.error(f"YouTube API error: {e}")
+        youtube_videos = []
 
-    #     matched = find_matching_keywords(text, keywords)
+    for video in youtube_videos:
+        text = video.get("text", "").strip()
 
-    #     try:
-    #         cur.execute("""
-    #         INSERT IGNORE INTO posts
-    #         (platform_post_id, platform, keyword_config_id, matched_keywords,
-    #         post_text, post_url, author_username, author_display_name,
-    #         like_count, retweet_count, reply_count, impression_count,
-    #         language, posted_at)
-    #         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
-    #         """,(
-    #             video["id"],
-    #             "YOUTUBE",
-    #             config_id,
-    #             json.dumps(matched),
-    #             text,
-    #             video["url"],
-    #             video["channel"],
-    #             video["channel"],
-    #             0,0,0,0,
-    #             "en",
-    #             video["published_at"]
-    #         ))
+        if not text:
+            continue
 
-    #         post_id = cur.lastrowid
+        matched = find_matching_keywords(text, keywords)
 
-    #         if post_id:
-    #             sentiment, score = analyze_sentiment(text)
+        try:
+            cur.execute("""
+            INSERT IGNORE INTO posts
+            (platform_post_id, platform, keyword_config_id, matched_keywords,
+            post_text, post_url, author_username, author_display_name,
+            like_count, retweet_count, reply_count, impression_count,
+            language, posted_at)
+            VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+            """,(
+                video["id"],
+                "YOUTUBE",
+                config_id,
+                json.dumps(matched),
+                text,
+                video["url"],
+                video["channel"],
+                video["channel"],
+                0,0,0,0,
+                "en",
+                video["published_at"]
+            ))
 
-    #             cur.execute("""
-    #                 INSERT IGNORE INTO post_sentiment
-    #                 (post_id, sentiment, sentiment_score)
-    #                 VALUES (%s,%s,%s)
-    #             """,(post_id,sentiment,score))
+            post_id = cur.lastrowid
 
-    #             demo = estimate_demographics(video["channel"], video["channel"], "")
+            if post_id:
+                sentiment, score = analyze_sentiment(text)
 
-    #             cur.execute("""
-    #                 INSERT IGNORE INTO author_demographics
-    #                 (post_id, estimated_age_group, estimated_gender)
-    #                 VALUES (%s,%s,%s)
-    #             """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+                cur.execute("""
+                    INSERT IGNORE INTO post_sentiment
+                    (post_id, sentiment, sentiment_score)
+                    VALUES (%s,%s,%s)
+                """,(post_id,sentiment,score))
 
-    #             total += 1
+                demo = estimate_demographics(video["channel"], video["channel"], "")
 
-    #     except Exception as e:
-    #         db.rollback()
-    #         log.warning(e)
+                cur.execute("""
+                    INSERT IGNORE INTO author_demographics
+                    (post_id, estimated_age_group, estimated_gender)
+                    VALUES (%s,%s,%s)
+                """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+
+                total += 1
+
+        except Exception as e:
+            db.rollback()
+            log.warning(e)
 
     # INSTAGRAM COLLECTION
 
+    # try:
+    #     instagram_posts = fetch_instagram_posts(config)
+    # except Exception as e:
+    #     logger.error(f"Instagram fetch failed: {e}")
+    #     instagram_posts = []
     try:
         instagram_posts = fetch_instagram_posts(config)
+        logger.info(f"Instagram returned {len(instagram_posts)} posts")
+
     except Exception as e:
-        logger.error(f"Instagram fetch failed: {e}")
+        if "rate limit" in str(e).lower():
+            logger.error("Instagram API rate limit exceeded. Skipping this run.")
+        else:
+            logger.error(f"Instagram API error: {e}")
         instagram_posts = []
 
     logger.info(f"Instagram returned {len(instagram_posts)} posts")
