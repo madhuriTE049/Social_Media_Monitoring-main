@@ -30,6 +30,22 @@ def save_post(cursor, tweet, author, config_id, matched_keywords):
         tweet.created_at.replace(tzinfo=None) if tweet.created_at else datetime.utcnow()
     ))
 
+    # ✅ ADD THIS BLOCK
+    if cursor.rowcount == 0:   # duplicate → insert ignored
+        cursor.execute("""
+            UPDATE posts
+            SET keyword_config_id = %s,
+                matched_keywords = %s
+            WHERE platform_post_id = %s
+            AND platform = %s
+            AND (keyword_config_id IS NULL OR keyword_config_id = 0)
+        """, (
+            config_id,
+            json.dumps(matched_keywords),
+            str(tweet.id),
+            "X"
+        ))
+
     return cursor.lastrowid
 
 

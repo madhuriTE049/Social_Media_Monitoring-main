@@ -1,3 +1,278 @@
+# import logging
+# import json
+
+# from database.connection import get_db_connection
+# from database.repository import save_post
+# from collectors.x_collector import fetch_tweets
+# from parsers.sentiment import analyze_sentiment
+# from parsers.demographics import estimate_demographics
+# from collectors.youtube_collector import fetch_youtube_posts
+
+# from notifications.email_sender import send_email
+# from notifications.report_builder import build_email_table
+# from notifications.report_builder import build_combined_email_table
+
+# from database.repository import get_recent_posts
+# from database.repository import get_recent_posts_all_platforms
+
+# from core.logger import logger
+
+# logging.basicConfig(level=logging.INFO)
+# log = logging.getLogger(__name__)
+
+# EMAIL_MODE = "combined"
+# # options: "separate" or "combined"
+
+
+# def find_matching_keywords(text, keywords):
+
+#     text = text.lower()
+#     matched = []
+
+#     for k in keywords:
+
+#         k_clean = k.lower()
+
+#         if k_clean in text:
+#             matched.append(k)
+
+#         elif k_clean.replace(" ", "") in text.replace(" ", ""):
+#             matched.append(k)
+
+#     return matched
+
+
+# def run_fetch_job():
+#     """Run fetch for ALL active configs (kept for manual/testing use)."""
+#     db = get_db_connection()
+#     cur = db.cursor(dictionary=True)
+#     cur.execute("SELECT * FROM keyword_configs WHERE is_active=1")
+#     configs = cur.fetchall()
+#     cur.close()
+#     db.close()
+
+#     for config in configs:
+#         run_fetch_job_for_config(config)
+
+
+# def run_fetch_job_for_config(config):
+
+#     config_id = config["id"]
+#     frequency = int(config.get("frequency") or 60)
+    
+#     logger.info(f"Starting fetch job for config id={config_id} (frequency={frequency}m)")
+
+#     db = get_db_connection()
+#     cur = db.cursor(dictionary=True)
+
+#     total = 0
+
+#     # store posts grouped by email list
+#     email_groups = {}
+
+#     if True:  # single-config scope
+
+#         tweets, users = fetch_tweets(config)
+#         logger.info(f"X returned {len(tweets)} tweets")
+
+#         keywords = config["keywords"] if isinstance(config["keywords"], list) else json.loads(config["keywords"])
+
+#         for tweet in tweets:
+
+#             author = users.get(tweet.author_id)
+
+#             if not author:
+#                 continue
+
+#             matched = find_matching_keywords(tweet.text, keywords)
+
+#             try:
+
+#                 post_id = save_post(cur, tweet, author, config["id"], matched)
+
+#                 if post_id:
+
+#                     sentiment, score = analyze_sentiment(tweet.text)
+
+#                     cur.execute("""
+#                         INSERT IGNORE INTO post_sentiment
+#                         (post_id,sentiment,sentiment_score)
+#                         VALUES (%s,%s,%s)
+#                     """,(post_id,sentiment,score))
+
+#                     demo = estimate_demographics(
+#                         author.username,
+#                         author.name,
+#                         author.description
+#                     )
+
+#                     cur.execute("""
+#                         INSERT IGNORE INTO author_demographics
+#                         (post_id,estimated_age_group,estimated_gender)
+#                         VALUES (%s,%s,%s)
+#                     """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+
+#                     db.commit()
+#                     total += 1
+
+#             except Exception as e:
+#                 db.rollback()
+#                 log.warning(e)
+
+#         # -----------------------------
+#         # YOUTUBE COLLECTION
+#         # -----------------------------
+
+#         youtube_videos = fetch_youtube_posts(config)
+        
+#         logger.info(f"YouTube returned {len(youtube_videos)} videos")
+
+#         for video in youtube_videos:
+
+#             text = video.get("text", "").strip()
+
+#             if not text:
+#                 continue
+
+#             matched = find_matching_keywords(text, keywords)
+
+#             try:
+
+#                 cur.execute("""
+#                 INSERT IGNORE INTO posts
+#                 (platform_post_id, platform, keyword_config_id, matched_keywords,
+#                 post_text, post_url, author_username, author_display_name,
+#                 like_count, retweet_count, reply_count, impression_count,
+#                 language, posted_at)
+#                 VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+#                 """,(
+#                     video["id"],
+#                     "YOUTUBE",
+#                     config["id"],
+#                     json.dumps(matched),
+#                     text,
+#                     video["url"],
+#                     video["channel"],
+#                     video["channel"],
+#                     0,
+#                     0,
+#                     0,
+#                     0,
+#                     "en",
+#                     video["published_at"]
+#                 ))
+
+#                 post_id = cur.lastrowid
+
+#                 if post_id:
+
+#                     sentiment, score = analyze_sentiment(text)
+
+#                     cur.execute("""
+#                         INSERT IGNORE INTO post_sentiment
+#                         (post_id, sentiment, sentiment_score)
+#                         VALUES (%s,%s,%s)
+#                     """,(post_id,sentiment,score))
+
+#                     demo = estimate_demographics(
+#                         video["channel"],
+#                         video["channel"],
+#                         ""
+#                     )
+
+#                     cur.execute("""
+#                         INSERT IGNORE INTO author_demographics
+#                         (post_id, estimated_age_group, estimated_gender)
+#                         VALUES (%s,%s,%s)
+#                     """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
+
+#                     db.commit()
+#                     total += 1
+
+#             except Exception as e:
+#                 db.rollback()
+#                 log.warning(e)
+
+#         # -----------------------------
+#         # EMAIL COLLECTION LOGIC
+#         # -----------------------------
+
+#         emails = config.get("emails")
+
+#         logger.info(f"Checking email trigger for config {config['id']}")
+
+#         if emails:
+
+#             emails = emails if isinstance(emails, list) else json.loads(emails)
+
+#             log.info(f"Emails configured: {emails}")
+
+#             email_key = tuple(sorted(set(emails)))
+
+#             if EMAIL_MODE == "separate":
+
+#                 platforms = ["X", "YOUTUBE"]
+
+#                 for platform in platforms:
+
+#                     posts = get_recent_posts(cur, config["id"], platform, frequency)
+
+#                     if email_key not in email_groups:
+#                         email_groups[email_key] = []
+
+#                     email_groups[email_key].extend(posts)
+
+#             elif EMAIL_MODE == "combined":
+
+#                 posts = get_recent_posts_all_platforms(
+#                     cur,
+#                     config["id"],
+#                     frequency
+#                 )
+
+#                 if email_key not in email_groups:
+#                     email_groups[email_key] = []
+
+#                 email_groups[email_key].extend(posts)
+
+#     # -----------------------------
+#     # SEND EMAILS AFTER COLLECTING
+#     # -----------------------------
+
+#     for email_key, posts in email_groups.items():
+
+#         if not posts:
+#             continue
+
+#         emails = list(email_key)
+
+#         logger.info(f"Sending report to {emails} with {len(posts)} posts")
+
+#         if EMAIL_MODE == "separate":
+
+#             html = build_email_table(
+#                 posts,
+#                 "Social Listening Report"
+#             )
+
+#         else:
+
+#             html = build_combined_email_table(
+#                 posts,
+#                 "Social Listening (All Platforms)"
+#             )
+
+#         send_email(
+#             emails,
+#             "Social Media Monitoring Report",
+#             html
+#         )
+
+#     cur.close()
+#     db.close()
+
+#     logger.info(f"Fetched {total} posts")
+
 import logging
 import json
 from datetime import datetime
@@ -55,29 +330,18 @@ def run_fetch_job_for_config(config, cur, db):
 
     keywords = config["keywords"] if isinstance(config["keywords"], list) else json.loads(config["keywords"])
 
-    platforms = config.get("platforms")
-
-    if platforms:
-        platforms = platforms if isinstance(platforms, list) else json.loads(platforms)
-        platforms = [p.upper() for p in platforms]
-    else:
-        platforms = ["X", "YOUTUBE", "INSTAGRAM"]
-
     # X COLLECTION
 
     # tweets, users = fetch_tweets(config)
     # logger.info(f"X returned {len(tweets)} tweets")
     # X COLLECTION
-    if "X" in platforms:
-        try:
-            tweets, users = fetch_tweets(config)
-        except TooManyRequests as e:
-            logger.error("X API rate limit exceeded. Skipping this run.")
-            tweets, users = [], {}
-        except Exception as e:
-            logger.error(f"X API error: {e}")
-            tweets, users = [], {}
-    else:
+    try:
+        tweets, users = fetch_tweets(config)
+    except TooManyRequests as e:
+        logger.error("X API rate limit exceeded. Skipping this run.")
+        tweets, users = [], {}
+    except Exception as e:
+        logger.error(f"X API error: {e}")
         tweets, users = [], {}
 
     for tweet in tweets:
@@ -121,21 +385,19 @@ def run_fetch_job_for_config(config, cur, db):
 
     # youtube_videos = fetch_youtube_posts(config)
     # logger.info(f"YouTube returned {len(youtube_videos)} videos")
-    # YOUTUBE COLLECTION
-    if "YOUTUBE" in platforms:
-        try:
-            youtube_videos = fetch_youtube_posts(config)
-            logger.info(f"YouTube returned {len(youtube_videos)} videos")
-        except HttpError as e:
-            if e.resp.status == 403:
-                logger.error("YouTube API quota exceeded. Skipping this run.")
-            else:
-                logger.error(f"YouTube API HttpError: {e}")
-            youtube_videos = []
-        except Exception as e:
-            logger.error(f"YouTube API error: {e}")
-            youtube_videos = []
-    else:
+    try:
+        youtube_videos = fetch_youtube_posts(config)
+        logger.info(f"YouTube returned {len(youtube_videos)} videos")
+
+    except HttpError as e:
+        if e.resp.status == 403:
+            logger.error("YouTube API quota exceeded. Skipping this run.")
+        else:
+            logger.error(f"YouTube API HttpError: {e}")
+        youtube_videos = []
+
+    except Exception as e:
+        logger.error(f"YouTube API error: {e}")
         youtube_videos = []
 
     for video in youtube_videos:
@@ -167,6 +429,22 @@ def run_fetch_job_for_config(config, cur, db):
                 "en",
                 video["published_at"]
             ))
+
+            # ✅ ADD THIS BLOCK
+            if cur.rowcount == 0:   # duplicate → INSERT IGNORE skipped
+                cur.execute("""
+                    UPDATE posts
+                    SET keyword_config_id = %s,
+                        matched_keywords = %s
+                    WHERE platform_post_id = %s
+                    AND platform = %s
+                    AND (keyword_config_id IS NULL OR keyword_config_id = 0)
+                """, (
+                    config_id,
+                    json.dumps(matched),
+                    video["id"],
+                    "YOUTUBE"
+                ))
 
             post_id = cur.lastrowid
 
@@ -200,18 +478,15 @@ def run_fetch_job_for_config(config, cur, db):
     # except Exception as e:
     #     logger.error(f"Instagram fetch failed: {e}")
     #     instagram_posts = []
-    # INSTAGRAM COLLECTION
-    if "INSTAGRAM" in platforms:
-        try:
-            instagram_posts = fetch_instagram_posts(config)
-            logger.info(f"Instagram returned {len(instagram_posts)} posts")
-        except Exception as e:
-            if "rate limit" in str(e).lower():
-                logger.error("Instagram API rate limit exceeded. Skipping this run.")
-            else:
-                logger.error(f"Instagram API error: {e}")
-            instagram_posts = []
-    else:
+    try:
+        instagram_posts = fetch_instagram_posts(config)
+        logger.info(f"Instagram returned {len(instagram_posts)} posts")
+
+    except Exception as e:
+        if "rate limit" in str(e).lower():
+            logger.error("Instagram API rate limit exceeded. Skipping this run.")
+        else:
+            logger.error(f"Instagram API error: {e}")
         instagram_posts = []
 
     logger.info(f"Instagram returned {len(instagram_posts)} posts")
@@ -253,6 +528,21 @@ def run_fetch_job_for_config(config, cur, db):
                 posted_at
             ))
 
+            # ✅ ADD THIS BLOCK
+            if cur.rowcount == 0:   # duplicate → insert ignored
+                cur.execute("""
+                    UPDATE posts
+                    SET keyword_config_id = %s,
+                        matched_keywords = %s
+                    WHERE platform_post_id = %s
+                    AND platform = %s
+                    AND (keyword_config_id IS NULL OR keyword_config_id = 0)
+                """, (
+                    config_id,
+                    json.dumps(matched),
+                    post["id"],
+                    "INSTAGRAM"
+                ))
             post_id = cur.lastrowid
 
             if post_id:

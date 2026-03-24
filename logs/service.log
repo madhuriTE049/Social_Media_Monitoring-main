@@ -1370,3 +1370,29 @@
 2026-03-18 18:15:54,869 | INFO | Instagram collection completed for config 137 with 0 posts
 2026-03-18 18:15:54,870 | INFO | Instagram returned 0 posts
 2026-03-18 18:15:54,906 | INFO | Fetched 0 posts
+2026-03-18 18:43:25,276 | INFO | Starting fetch job for config id=1 (frequency=30m)
+2026-03-18 18:43:27,313 | WARNING | Instagram hashtag search error for 'tnelection': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'As84J1TOX4OxealEFvoCIdJ'}
+2026-03-18 18:43:28,876 | WARNING | Instagram hashtag search error for 'tnelections2026': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'Aj0ZGaA8q3ZLRe_YKRtBjZ7'}
+2026-03-18 18:43:30,371 | WARNING | Instagram hashtag search error for 'tnpolitics': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'AfmPluOOr02tzBjpaJ5KrUW'}
+2026-03-18 18:43:31,895 | WARNING | Instagram hashtag search error for 'tamilnadupolitics': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'A1ZedReHKz_5usb6lbTMon9'}
+2026-03-18 18:43:33,506 | WARNING | Instagram hashtag search error for 'tamilnadu': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'AzB2qoGzi9fBOZhW_KrRN_h'}
+2026-03-18 18:43:33,507 | INFO | Instagram collection completed for config 1 with 0 posts
+2026-03-18 18:43:33,507 | INFO | Instagram returned 0 posts
+2026-03-18 18:43:33,538 | INFO | Fetched 0 posts
+2026-03-18 18:44:03,871 | INFO | Starting fetch job for config id=3 (frequency=30m)
+2026-03-18 18:44:05,103 | WARNING | Instagram hashtag search error for 'spokespersoneci': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'AdimtLhyqFdVJTxu0Bdjjk-'}
+2026-03-18 18:44:06,284 | WARNING | Instagram hashtag search error for 'ecisveep': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'AnA67xlvO0W71nLMxJso9s7'}
+2026-03-18 18:44:07,458 | WARNING | Instagram hashtag search error for 'tnelectionsceo': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'A0XwjQ6B4Lznkjh84TKxUy6'}
+2026-03-18 18:44:08,710 | WARNING | Instagram hashtag search error for 'voterlist': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'AWHn-JB55BE8C9WO2xEl8vx'}
+2026-03-18 18:44:10,111 | WARNING | Instagram hashtag search error for 'voterlisttn': {'message': '(#4) Application request limit reached', 'type': 'OAuthException', 'is_transient': True, 'code': 4, 'fbtrace_id': 'A4bSHKeXVLh6GMWtE68Kg9-'}
+2026-03-18 18:44:10,112 | INFO | Instagram collection completed for config 3 with 0 posts
+2026-03-18 18:44:10,112 | INFO | Instagram returned 0 posts
+2026-03-18 18:44:10,144 | INFO | Fetched 0 posts
+2026-03-18 18:44:10,422 | INFO | Starting fetch job for config id=5 (frequency=30m)
+2026-03-18 18:44:10,422 | INFO | Instagram collection completed for config 5 with 0 posts
+2026-03-18 18:44:10,422 | INFO | Instagram returned 0 posts
+2026-03-18 18:44:10,457 | INFO | Fetched 0 posts
+2026-03-18 19:58:49,027 | INFO | file_cache is only supported with oauth2client<4.0.0
+2026-03-18 19:58:49,674 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 19:58:49,674 | INFO | Starting Social Media Monitoring Scheduler
+2026-03-18 19:58:49,674 | INFO | Loading active configs and scheduling jobs

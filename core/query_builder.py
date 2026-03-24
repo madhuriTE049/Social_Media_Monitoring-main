@@ -20,6 +20,6 @@ def build_query(config):
         location_parts = " OR ".join([f'place:"{loc}"' for loc in locations])
         query += f" ({location_parts})"
 
-    query += " -is:retweet -is:reply lang:en"
+    # query += " -is:retweet -is:reply lang:en"
 
     return query
