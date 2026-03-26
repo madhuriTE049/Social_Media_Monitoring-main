@@ -18,6 +18,7 @@ from notifications.report_builder import build_email_table, build_combined_email
 from tweepy.errors import TooManyRequests
 from googleapiclient.errors import HttpError
 from core.logger import logger
+from dateutil import parser
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -25,6 +26,11 @@ log = logging.getLogger(__name__)
 EMAIL_MODE = "combined"
 #EMAIL_MODE = "separate"
 
+def safe_parse_datetime(value):
+    try:
+        return parser.parse(value)
+    except Exception:
+        return None
 
 def find_matching_keywords(text, keywords):
 
@@ -55,27 +61,30 @@ def run_fetch_job_for_config(config, cur, db):
 
     keywords = config["keywords"] if isinstance(config["keywords"], list) else json.loads(config["keywords"])
 
-    platforms = config.get("platforms")
+    platform = config.get("platform")
+    platform = platform.upper()
 
-    if platforms:
-        platforms = platforms if isinstance(platforms, list) else json.loads(platforms)
-        platforms = [p.upper() for p in platforms]
-    else:
-        platforms = ["X", "YOUTUBE", "INSTAGRAM"]
+    #print("Config keywords:", keywords)
+    # if platforms:
+    #     platforms = platforms if isinstance(platforms, list) else json.loads(platforms)
+    #     platforms = [p.upper() for p in platforms]
+    # else:
+    #     platforms = ["X"]
 
     # X COLLECTION
 
     # tweets, users = fetch_tweets(config)
     # logger.info(f"X returned {len(tweets)} tweets")
     # X COLLECTION
-    if "X" in platforms:
+    if platform.lower() == "x":
+        logger.info("fetching from x... config: %s ", config_id)
         try:
             tweets, users = fetch_tweets(config)
-        except TooManyRequests as e:
-            logger.error("X API rate limit exceeded. Skipping this run.")
+        except toomanyrequests as e:
+            logger.error("x api rate limit exceeded. skipping this run.")
             tweets, users = [], {}
-        except Exception as e:
-            logger.error(f"X API error: {e}")
+        except exception as e:
+            logger.error(f"x api error: {e}")
             tweets, users = [], {}
     else:
         tweets, users = [], {}
@@ -94,9 +103,9 @@ def run_fetch_job_for_config(config, cur, db):
                 sentiment, score = analyze_sentiment(tweet.text)
 
                 cur.execute("""
-                    INSERT IGNORE INTO post_sentiment
+                    insert ignore into post_sentiment
                     (post_id,sentiment,sentiment_score)
-                    VALUES (%s,%s,%s)
+                    values (%s,%s,%s)
                 """,(post_id,sentiment,score))
 
                 demo = estimate_demographics(
@@ -106,14 +115,14 @@ def run_fetch_job_for_config(config, cur, db):
                 )
 
                 cur.execute("""
-                    INSERT IGNORE INTO author_demographics
+                    insert ignore into author_demographics
                     (post_id,estimated_age_group,estimated_gender)
-                    VALUES (%s,%s,%s)
+                    values (%s,%s,%s)
                 """,(post_id,demo["estimated_age_group"],demo["estimated_gender"]))
 
                 total += 1
 
-        except Exception as e:
+        except exception as e:
             db.rollback()
             log.warning(e)
 
@@ -122,7 +131,8 @@ def run_fetch_job_for_config(config, cur, db):
     # youtube_videos = fetch_youtube_posts(config)
     # logger.info(f"YouTube returned {len(youtube_videos)} videos")
     # YOUTUBE COLLECTION
-    if "YOUTUBE" in platforms:
+    if platform.lower() == "youtube":
+        logger.info("Fetching from YouTube... config: %s ", config_id)
         try:
             youtube_videos = fetch_youtube_posts(config)
             logger.info(f"YouTube returned {len(youtube_videos)} videos")
@@ -201,7 +211,8 @@ def run_fetch_job_for_config(config, cur, db):
     #     logger.error(f"Instagram fetch failed: {e}")
     #     instagram_posts = []
     # INSTAGRAM COLLECTION
-    if "INSTAGRAM" in platforms:
+    if platform.lower() == "instagram":
+        logger.info("Fetching from Instagram... config: %s ", config_id)
         try:
             instagram_posts = fetch_instagram_posts(config)
             logger.info(f"Instagram returned {len(instagram_posts)} posts")
@@ -218,7 +229,8 @@ def run_fetch_job_for_config(config, cur, db):
 
     for post in instagram_posts:
 
-        posted_at = datetime.fromisoformat(post["published_at"].replace("Z","+00:00"))
+        #posted_at = datetime.fromisoformat(post["published_at"].replace("Z","+00:00"))
+        posted_at = safe_parse_datetime(post.get("published_at"))
 
         text = post.get("text", "").strip()
 
